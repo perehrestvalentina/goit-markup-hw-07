@@ -241,7 +241,7 @@ section {
   justify-content: center;
 }
 
-.hero-item::before {
+.benefits__item::before {
   display: block;
   content: "";
   width: 270px;
@@ -275,8 +275,8 @@ section {
   margin-right: 9px;
 }
 
-.hero-btn:focus,
-.hero-btn:hover {
+.order__btn:focus,
+.order__btn:hover {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -286,11 +286,11 @@ section {
   display: flex;
 }
 
-.hero-list {
+.benefits__list {
   display: flex;
 }
 
-.hero-btn {
+.order__btn {
   text-align: center;
   padding: 10px 32px;
   min-width: 200px;
@@ -309,9 +309,10 @@ section {
 }
 
 .hero-title {
-  margin-top: 200;
   margin-bottom: 30px;
+}
 
+.order__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -321,15 +322,15 @@ section {
   color: var(--main-title-color);
 }
 
-.hero-item {
+.benefits__item {
   width: 270px;
 }
 
-.hero-item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.hero-top-text .hero-text {
+.benefits__title .benefits__text {
   display: flex;
 }
 
@@ -361,14 +362,14 @@ section {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
 }
 
-.hero-top-text {
+.benefits__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -379,13 +380,13 @@ section {
 }
 
 /*------------------------------------ABOUT--------------------*/
-.about-title {
+.servises__title {
   margin-bottom: 50px;
   text-align: center;
   color: var(--second-title-color);
 }
 
-.about-list {
+.servises__list {
   display: flex;
   margin-left: -30px;
   font-size: 36px;
@@ -397,7 +398,7 @@ section {
   padding-bottom: 94px;
 }
 
-.about-item {
+.servises__item {
   flex-basis: calc((100% / 3) - 30px);
   margin-left: 30px;
 }
@@ -636,11 +637,11 @@ section {
   color: var(--third-title-color);
 }
 
-.work-box {
+.servises__work-box {
   position: relative;
 }
 
-.work-top-text {
+.servises__work-text {
   position: absolute;
   bottom: 0;
 
