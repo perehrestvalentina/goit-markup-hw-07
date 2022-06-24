@@ -84,11 +84,27 @@ section {
   letter-spacing: 0.03em;
 }
 
+.top-tex--light {
+  color: #ffffff;
+}
+
+.top-tex--dark {
+  color: #757575;
+}
+
 .title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.title--light {
+  color: var(--main-title-color);
+}
+
+.title--dark {
+  color: var(--second-title-color);
 }
 
 .head {
@@ -319,7 +335,6 @@ section {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--main-title-color);
 }
 
 .benefits__item {
@@ -366,7 +381,6 @@ section {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--third-title-color);
 }
 
 .benefits__title {
@@ -381,9 +395,11 @@ section {
 
 /*------------------------------------ABOUT--------------------*/
 .servises__title {
-  margin-bottom: 50px;
   text-align: center;
-  color: var(--second-title-color);
+}
+
+.servises-title {
+  margin-bottom: 50px;
 }
 
 .servises__list {
@@ -409,13 +425,13 @@ section {
   background: #f5f4fa;
 }
 
-.about-team-list {
+.about-team__list {
   display: flex;
   gap: 30px;
   text-align: center;
 }
 
-.about-team-item {
+.about-team__item {
   flex-basis: calc((100% / 4) - 30px);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -423,54 +439,58 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
-.about-team-title {
+.about-team__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   justify-content: center;
-  color: var(--second-title-color);
 }
 
-.about-img {
-  margin-bottom: 10px;
+.specialists__img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--second-title-color);
 }
 
-.about-work {
+.specialists-img {
+  margin-bottom: 10px;
+}
+
+.specialists-work {
+  margin-bottom: 16px;
+}
+
+.specialists__work {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
-  margin-bottom: 16px;
 }
 
-.team-desk {
+.specialists {
   padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
 }
 
-.team-soc-list {
+.specialists__list {
   display: flex;
   justify-content: center;
 }
 
-.team-soc-item {
+.socials__item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
 
-.team-soc-item:last-child {
+.socials__item:last-child {
   margin-right: 0;
 }
 
-.team-soc-link {
+.socials__link {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -481,18 +501,18 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-soc-icon {
+.socials__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accente-color);
 }
 
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   fill: var(--main-btn-color);
 }
 
@@ -502,8 +522,7 @@ section {
   padding-bottom: 94px;
 }
 
-.client-title {
-  margin-bottom: 50px;
+.cards__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -511,20 +530,30 @@ section {
   color: var(--second-title-color);
 }
 
-.client-list {
-  padding: 0;
-  margin: 0;
+.cards-title {
+  margin-bottom: 50px;
+}
+
+.cards__list {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.client-item {
+.cards-list {
+  padding: 0;
+  margin: 0;
+}
+
+.cards__item {
   width: 170px;
   height: 92px;
+}
+
+.cards-item {
   margin-right: 30px;
 }
 
-.client-link {
+.cards__link {
   width: 100%;
   height: 100%;
   border: 1px solid #AFB1B8;
@@ -535,22 +564,22 @@ section {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.cards__link:hover,
+.cards__link:focus {
   border: 1px solid var(--accente-color);
 }
 
-.client-icon {
+.cards__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-item:last-child {
+.cards-item:last-child {
   margin-right: 0;
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.cards__link:hover .cards__icon,
+.cards__link:focus .cards__icon {
   fill: var(--accente-color);
 }
 
@@ -585,7 +614,6 @@ section {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56x;
-  color: #FFFFFF;
   background: rgba(33, 150, 243, 0.9);
   line-height: 1.5;
   padding: 63px 24px;
