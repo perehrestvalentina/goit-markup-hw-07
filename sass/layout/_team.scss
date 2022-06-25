@@ -1,44 +1,27 @@
-.about-team {
+.team {
     padding-top: 94px;
     padding-bottom: 94px;
     background: #f5f4fa;
 }
 
-.about-team__title {
+.team-title {
     margin-bottom: 50px;
-    text-align: center;
-    color: var(--second-title-color);
 }
 
-.about-team__title {
-    margin-bottom: 50px;
+.team__title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     justify-content: center;
-    color: var(--second-title-color);
 }
 
-.about-team__list {
-    display: flex;
-    margin-left: -30px;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
-
-.about-team__list {
+.team__list {
     display: flex;
     gap: 30px;
     text-align: center;
 }
 
-.about-team__item {
-    flex-basis: calc((100% / 3) - 30px);
-    margin-left: 30px;
-}
-
-.about-team__item {
+.team__item {
     flex-basis: calc((100% / 4) - 30px);
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -46,22 +29,24 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.about-team__desk {
+.team__desk {
     padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
 }
 
-.specialists__img {
+.team__img--tex {
     margin-bottom: 10px;
+}
+
+.team__img {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--second-title-color);
 }
 
-.specialists__work {
+.team__work {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -69,19 +54,10 @@
     margin-bottom: 16px;
 }
 
-.specialists__list {
+
+.team__socials-list {
     display: flex;
     justify-content: center;
-}
-
-.socials__item {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-}
-
-.socials__item:last-child {
-    margin-right: 0;
 }
 
 .socials__link {
@@ -93,6 +69,19 @@
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__item--right {
+    margin-right: 10px;
+}
+
+.socials__item {
+    width: 44px;
+    height: 44px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
 }
 
 .socials__icon {
