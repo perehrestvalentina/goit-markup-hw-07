@@ -40,19 +40,19 @@
     align-items: center;
     justify-content: center;
     transition: backgrond-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accente-color);
+    }
 }
 
 .footer-networks__icon {
     fill: var(--main-btn-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-networks__link:hover,
-.footer-networks__link:focus {
-    background-color: var(--accente-color);
-}
-
-.footer-networks__link:hover .footer-networks__icon,
-.footer-networks__link:focus .footer-networks__icon {
-    fill: var(--main-btn-color);
+    .footer-networks__link:hover &,
+    .footer-networks__link:focus & {
+        fill: var(--main-btn-color);
+    }
 }
