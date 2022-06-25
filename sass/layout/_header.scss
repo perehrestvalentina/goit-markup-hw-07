@@ -26,7 +26,13 @@
     color: var(--second-title-color);
 }
 
-/*--------- ------------header-nav---------------------*/
+.head {
+    background-color: #ffffff;
+}
+
+.logo__color {
+    color: var(--accente-color);
+}
 
 .header .container {
     display: flex;
